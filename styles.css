@@ -14,3 +14,12 @@ position: relative;
 bottom: 0;
 width: 100%;
 }
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.5px;;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
