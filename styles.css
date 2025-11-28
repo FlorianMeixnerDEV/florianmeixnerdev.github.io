@@ -1,0 +1,16 @@
+body {
+background-color: #f5f5f5;
+}
+
+
+.card img {
+object-fit: cover;
+height: 200px;
+}
+
+
+footer {
+position: relative;
+bottom: 0;
+width: 100%;
+}

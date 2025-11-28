@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FMDEV - ModProjekte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Herzlich Willkommen hier auf FlorianMeixnerDEV</h1>
-    <p>Dies ist meine persönliche Webseite, auf der ich meine Projekte und Gedanken teile.</p>
-    <p>Schau dich gerne um und entdecke, was ich zu bieten habe!</p>
-    
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4 mb-4">
+        <h1>FlorianMeixnerDEV</h1>
+        <p>Übersicht meiner aktuellen Mods</p>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main class="container mb-5">
+        <div class="row g-4">
+
+            <!-- Projektkarte 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/1.png" class="card-img-top" alt="Mod 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Alan Walker Music Mod</h5>
+                        <p class="card-text">This mod brings the unforgettable sounds of Alan Walker directly into your Minecraft world! </p>
+                        <p><a href="https://github.com/FlorianMeixnerDEV/Alan-Walker-Mod-Minecraft-NeoForge-1.21.8-" target="_blank" class="btn btn-info" role="button">Github</a></p>
+                        <p><a href="https://modrinth.com/mod/alan-walker-music" target="_blank" class="btn btn-danger" role="button">Modrinth</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projektkarte 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/26690.jpg" class="card-img-top" alt="Mod 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Comming Soon</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Projektkarte 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/26690.jpg" class="card-img-top" alt="Mod 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Comming Soon</h5>
+                        <p class="card-text"></p>   
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 FlorianMeixnerDEV</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
