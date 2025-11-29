@@ -3,83 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FMDEV - ModProjekte</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Minecraft Mod Wiki | Startseite</title>
+    <!-- Bootstrap CSS von CDN laden -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Eigene CSS-Datei laden -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Minecraft Mods</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Start</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://github.com/FlorianMeixnerDEV">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://modrinth.com/user/florianmeixnerdev">Modrinth</a>
-                </li>
-            </ul>
+    <!-- Navigationsleiste (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="50px" height="50px" alt="logo">
+                FlorianMeixnerDEV
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mods">Alle Mods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ressourcen">Ressourcen</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<br>
-<br>
-<br>
+    </nav>
 
     <!-- Hauptinhalt -->
-    <main class="container mb-4">
-        <div class="row g-4">
-
-            <!-- Projektkarte 1 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/1.png" class="card-img-top" alt="Mod 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Alan Walker Music Mod</h5>
-                        <p class="card-text">This mod brings the unforgettable sounds of Alan Walker directly into your Minecraft world! </p>
-                        <p><a href="https://github.com/FlorianMeixnerDEV/Alan-Walker-Mod-Minecraft-NeoForge-1.21.8-" target="_blank" class="btn btn-info" role="button">Github</a></p>
-                        <p><a href="https://modrinth.com/mod/alan-walker-music" target="_blank" class="btn btn-danger" role="button">Modrinth</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projektkarte 2 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/26690.jpg" class="card-img-top" alt="Mod 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Comming Soon</h5>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Projektkarte 3 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/26690.jpg" class="card-img-top" alt="Mod 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Comming Soon</h5>
-                        <p class="card-text"></p>   
+    <main class="container">
+        
+        <!-- Header Sektion mit Platzhalter-Bild -->
+        <div class="header-image text-center">
+            <div>
+                <h1 class="display-4 fw-bold">FlorianMeixnerDEV</h1>
+                <p class="lead">Alle Mods, Erklärungen und Anleitungen auf einen Blick.</p>
             </div>
         </div>
-    </div>
-</main>
+        <!-- Mod-Karten Sektion -->
+        <section id="mods" class=" g-4 mb-5">
+            <h2 class="col-12 text-center mb-4 text-secondary">Ausgewählte Mods</h2>
+            <!-- Mod-Karte 1: IndustrialCraft 2 -->
+            <div class="col">
+                <div class="card mod-card h-100 border-info">
+                    <img src="img/1.png" class="card-img-top bild1" alt="Alan Walker Music Mod">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Alan Walker Music Mod</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Music</h6>
+                        <p class="card-text">This mod brings the unforgettable sounds of Alan Walker directly into your Minecraft world! Discover new, collectible music tracks and face three unique new mobs that provide a musical challenge.</p>
+                        <a href="aw.html" class="btn btn-info text-white btn-sm w-100">MORE</a>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <small class="text-muted">Version: NeoForge 1.21.8</small>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </section>
+
+        <!-- Ressourcen Sektion -->
+        <section id="ressourcen" class="mt-5 pt-5">
+            <h2 class="mb-4 text-secondary">Nützliche Ressourcen</h2>
+            <ul class="list-group shadow-sm border-0 rounded-3">
+            <div class="alert alert-info" role="alert">
+                <p><a target="blank" href="https://modrinth.com/user/florianmeixnerdev">Modrinth</a></p>
+                <p><a target="blank" href="https://github.com/FlorianMeixnerDEV/Alan-Walker-Mod-Minecraft-NeoForge-1.21.8-">Github</a></p>
+                <p><a target="_blank" href="#">Discord</a></p>
+            </div>
+        </section><br><br><br><br>
+       <section>
+         <div class="alert alert-danger d-flex align-items-center" role="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg>
+  <div>
+    <strong>Achtung:</strong> Dies ist ein inoffizielles Mod-Wiki und steht in keiner Verbindung zu Microsoft oder Mojang Studios.
+  </div>
+</div>
+       </section>
+    </main>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('florianmeixnerdev', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Tip Us',
+    'floating-chat.donateButton.background-color': '#5cb85c',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
 
     <!-- Footer -->
-    <footer class="mt-auto bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; 2025 FlorianMeixnerDEV</p>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-light">© 2025 Minecraft Mod Wiki | Erstellt mit Bootstrap 5.</span>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle von CDN laden (Popper und JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

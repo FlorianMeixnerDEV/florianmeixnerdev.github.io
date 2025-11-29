@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE2 | Applied Energistics 2 Erklärung</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigationsleiste (Navbar) - Kopiert von index.html -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-fill me-2" viewBox="0 0 16 16">
+                    <path d="M12.01 4.502a1.5 1.5 0 0 0-.58.337L7 7.644V14.5a.5.5 0 0 1-1 0V7.644L1.57 4.839a1.5 1.5 0 0 0-.58-.337A1.5 1.5 0 0 0 0 6.01v4.98L6.429 15.5a1.5 1.5 0 0 0 1.142 0L14 10.99V6.01a1.5 1.5 0 0 0-1.99-1.508z"/>
+                </svg>
+                Mod-Wiki
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Applied Energistics 2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hauptinhalt der Mod-Seite -->
+    <main class="container py-5">
+        <h1 class="mb-4 text-success">Applied Energistics 2 (AE2)</h1>
+
+        <div class="row">
+            <!-- Linke Spalte: Inhaltsverzeichnis (Sidebar) -->
+            <div class="col-lg-3 mb-4">
+                <div class="card shadow-sm sticky-top" style="top: 80px;">
+                    <div class="card-header bg-success text-white fw-bold">
+                        Inhaltsverzeichnis
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#grundlagen" class="text-decoration-none">Grundlagen des ME-Systems</a></li>
+                        <li class="list-group-item"><a href="#komponenten" class="text-decoration-none">Kernkomponenten</a></li>
+                        <li class="list-group-item"><a href="#automatisierung" class="text-decoration-none">Automatisierung</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Rechte Spalte: Detail-Inhalt -->
+            <div class="col-lg-9">
+                <section id="grundlagen" class="mb-5">
+                    <h2>1. Grundlagen des ME-Systems</h2>
+                    <p class="lead">Applied Energistics 2 (AE2) ersetzt herkömmliche Lagerkisten durch ein hochmodernes, computergestütztes Speichersystem, das **Matter-Energy (ME) System** genannt wird. Es wandelt Gegenstände in digitale Daten um und speichert diese in Speicherkarten (Storage Cells).</p>
+                    <p>Das ME-Netzwerk benötigt **AE-Energie** (oft in J/t oder FE/t gemessen, aber intern als AE-Netzwerkpower behandelt) und **Kanäle** (Channels) zur Datenübertragung. Jede aktive Komponente im Netzwerk verbraucht einen Kanal. Ein ME Controller ist notwendig, um mehr als 8 Kanäle zu unterstützen.</p>
+                </section>
+
+                <section id="komponenten" class="mb-5">
+                    <h2>2. Kernkomponenten</h2>
+                    
+                    <h3 class="mt-4">Die wichtigsten Blöcke:</h3>
+                    <dl class="row">
+                        <dt class="col-sm-3">ME Controller</dt>
+                        <dd class="col-sm-9">Das Herzstück des Systems. Er verwaltet die Kanäle und stellt Energie bereit (benötigt externe Stromzufuhr!).</dd>
+                        
+                        <dt class="col-sm-3">ME Drive</dt>
+                        <dd class="col-sm-9">Ein Behälter, der bis zu 10 Storage Cells aufnehmen kann. Hier werden alle deine Items digital gespeichert.</dd>
+                        
+                        <dt class="col-sm-3">ME Terminal</dt>
+                        <dd class="col-sm-9">Die Benutzeroberfläche. Über dieses Terminal greifst du auf alle im Netzwerk gespeicherten Gegenstände zu.</dd>
+                        
+                        <dt class="col-sm-3">ME Cable</dt>
+                        <dd class="col-sm-9">Transportiert Kanäle und Energie. Die Kabel haben Limits (z.B. 8 Kanäle für Smart Cables).</dd>
+                    </dl>
+                </section>
+
+                <section id="automatisierung" class="mb-5">
+                    <h2>3. Automatisierte Fertigung</h2>
+                    <p>AE2 glänzt durch seine Fähigkeit, das Crafting zu automatisieren. Dies geschieht durch die Kombination von **Pattern Providers** und **ME Crafting Units**.</p>
+                    <p>Du programmierst Rezepte (Patterns) in das System, und das Netzwerk kann dann alle benötigten Komponenten automatisch sammeln und die Endprodukte herstellen, vorausgesetzt, alle Zutaten sind verfügbar.</p>
+                    <div class="alert alert-info" role="alert">
+                        Tipp: Nutze **Formation Planes** und **Annihilation Planes**, um den automatischen Bau und Abbau von Blöcken im Netzwerk zu integrieren (z.B. in Farms).
+                    </div>
+                </section>
+                
+                <a href="index.html" class="btn btn-outline-secondary mt-4">Zurück zur Mod-Übersicht</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer - Kopiert von index.html -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-light">© 2025 Minecraft Mod Wiki | Erstellt mit Bootstrap 5.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*
+ * Minecraft Wiki Styles
+ * Enthält Layout-Regeln für Sticky Footer und Karten-Styling.
+ */
+
+/* Zusätzliches CSS für das Sticky Footer Layout */
+html {
+    /* Stellt sicher, dass das HTML-Dokument mindestens die volle Höhe des Viewports einnimmt */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Flex-Container für Sticky Footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Leichter Hintergrund */
+    font-family: 'Inter', sans-serif; /* Standard-Schriftart */
+}
+
+main {
+    /* Hauptinhalt füllt den verfügbaren Platz aus */
+    flex: 1 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Zusätzlicher Platz über dem Footer */
+}
+
+.footer {
+    /* Footer-Styling */
+    padding: 1rem 0;
+    background-color: #343a40; /* Dunkle Farbe für den Footer */
+    color: white;
+    flex-shrink: 0; /* Verhindert, dass der Footer schrumpft */
+    border-top: 4px solid #4CAF50; /* Minecraft-grüner Akzent */
+}
+
+.mod-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 1rem; /* Größere, abgerundete Ecken */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: none; /* Bootstrap-Rahmen entfernen */
+}
+
+.mod-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand svg {
+    color: #4CAF50; /* Icon in Minecraft-Grün */
+}
+
+.header-image {
+    background: url('img/minecraft.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.header-image h1, .header-image p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+}
+
+.card-img-top {
+  /* 1. Bild auf Block-Ebene festlegen, damit die Ränder funktionieren */
+  display: block; 
+  
+  /* 2. Zentrierung durch automatische linke und rechte Ränder */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Optional: Stellt sicher, dass das Bild nicht die gesamte Breite der Card ausfüllt, 
+     damit die Zentrierung sichtbar wird. */
+  max-width: 700%; 
+  width: 250px; 
+  max-height: 100%; /* Maximale Höhe */
+  align-items: center;
+}
