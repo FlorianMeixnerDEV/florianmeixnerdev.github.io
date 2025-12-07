@@ -12,7 +12,7 @@ main {
     padding-bottom: 20px; /* Zusätzlicher Platz über dem Footer */
 }
 .header-image {
-    background: url('/img/minecraft.jpg') no-repeat center center/cover;
+    background: url('/img/minecraftingame1.png') no-repeat center center/cover;
     height: 300px;
     display: flex;
     align-items: center;
