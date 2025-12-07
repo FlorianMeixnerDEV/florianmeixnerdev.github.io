@@ -1,0 +1,31 @@
+@font-face {
+    font-family: backtoscool;
+    src: url(/fonts/BACK\ TO\ SCHOOL.otf);
+}
+.header{
+    background-image: url(img/logo.png);
+}
+main {
+    /* Hauptinhalt füllt den verfügbaren Platz aus */
+    flex: 100 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Zusätzlicher Platz über dem Footer */
+}
+.header-image {
+    background: url('/img/minecraft.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.header-image h1, .header-image p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px 2px;
+    border-radius: 1px;
+}
+
