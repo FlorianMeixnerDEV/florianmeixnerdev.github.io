@@ -2,6 +2,10 @@
     font-family: backtoscool;
     src: url(/fonts/BACK\ TO\ SCHOOL.otf);
 }
+@font-face {
+    font-family: Comic Sans MS;
+    src: url(/fonts/Comic\ Sans\ MS.ttf);
+}
 .header{
     background-image: url(img/logo.png);
 }
@@ -28,4 +32,3 @@ main {
     padding: 1px 2px;
     border-radius: 1px;
 }
-
