@@ -1,8 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 @font-face {
     font-family: backtoscool;
     src: url(/fonts/BACK\ TO\ SCHOOL.otf);
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,15 +12,17 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
 }
-.header{
+
+.header {
     background-image: url(img/logo.png);
 }
+
 main {
-    /* Hauptinhalt füllt den verfügbaren Platz aus */
     flex: 1;
     padding-top: 20px;
-    padding-bottom: 20px; /* Zusätzlicher Platz über dem Footer */
+    padding-bottom: 20px;
 }
+
 .header-image {
     background: url('/img/minecrafthouse.png') no-repeat center center/cover;
     height: 50vh;
@@ -38,12 +42,14 @@ main {
     padding: 10px 20px;
     border-radius: 10px;
 }
-.container{
+
+.container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card {
     border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 .card-title {
@@ -54,10 +60,13 @@ main {
 .card-text {
     line-height: 1.6;
 }
+
 .avatar {
     border-radius: 50%;
     max-width: 50px;
 }
+
+/* Button Hover-Effekte */
 .card a.btn {
     transition: all 0.25s ease-in-out;
     border-width: 2px;
@@ -72,7 +81,6 @@ main {
     opacity: 0.85;
 }
 
-/* Optional: sanfter Glow je nach Button-Farbe */
 .btn-outline-primary:hover {
     box-shadow: 0 12px 25px rgba(13, 110, 253, 0.35);
 }
@@ -89,4 +97,50 @@ main {
     box-shadow: 0 12px 25px rgba(25, 135, 84, 0.35);
 }
 
+/* Sidebar Styles */
+.card-header {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: #fff;
+    font-weight: bold;
+}
 
+.list-group-item a {
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+.list-group-item a:hover {
+    color: #f21010;
+    text-decoration: none;
+}
+
+/* Navbar Shadow */
+.navbar {
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.text1{
+    color: #2f00ff;
+}
+
+
+.ueberschrift {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    flex-shrink: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* Video Embed */
+.ratio iframe {
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
