@@ -38,25 +38,23 @@
           <a class="nav-link" href="getintouch.html">Get In Touch</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMods" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Mods
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMods">
             <li><a class="dropdown-item" href="comingsoon.html">LuckyBlock Mod</a></li>
             <li><a class="dropdown-item" href="aw.html">Alan Walker Music Wiki</a></li>
           </ul>
         </li>
-        <li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMinigames" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Minigames
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMinigames">
             <li><a class="dropdown-item" target="_blank" href="minigames/tetris/index.html">Tetris</a></li>
           </ul>
-        </li>
         </li>
       </ul>
     </div>
@@ -77,7 +75,9 @@
                     <li class="list-group-item"><a href="#custommobs" class="text-decoration-none"><i class="bi bi-people-fill me-2"></i>Custom Mobs</a></li>
                     <li class="list-group-item"><a href="#installation" class="text-decoration-none"><i class="bi bi-download me-2"></i>Installation</a></li>
                     <li class="list-group-item"><a href="#commands" class="text-decoration-none"><i class="bi bi-terminal me-2"></i>Commands</a></li>
+                    <li class="list-group-item"><a href="#mapdownload" class="text-decoration-none"><i class="bi bi-cloud-arrow-down me-2"></i>Map-Download</a></li>
                     <li class="list-group-item"><a href="#video" class="text-decoration-none"><i class="bi bi-play-circle me-2"></i>Mod-Preview</a></li>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -87,9 +87,11 @@
             <h1 class="mb-4 fw-bold text1">Alan Walker Music - Wiki</h1>
 
             <section id="introduction" class="mb-5">
-                <h2 class="mb-3">Introduction to the Mod</h2>
-                <p>The Alan Walker Music Mod is a mod about the DJ and songwriter Alan Walker.</p>
-                <p>The core of the mod is a custom music disc featuring some of his most famous songs.</p>
+                <h2 class="mb-3 text1">Introduction to the Mod</h2>
+                <div class="alert alert-info" role="alert">
+                    <p class="mb-0">The Alan Walker Music Mod is a mod about the DJ and songwriter Alan Walker.</p>
+                </div>
+                <p class="mt-3">The core of the mod is a <strong>custom music disc</strong> featuring some of his most famous songs.</p>
                 <p>Additional features and mobs are described below.</p>
             </section>
 
@@ -116,37 +118,133 @@
 
             <section id="custommobs" class="mb-5">
                 <h2 class="mb-3 text1">2. Custom Mobs</h2>
+                <p class="mb-3"><em>Three unique mobs can be summoned in your world:</em></p>
                 <ul class="list-group">
-                    <li class="list-group-item"><strong>Alan Walker:</strong> Peaceful mob. Can be tamed with a diamond.</li>
-                    <li class="list-group-item"><strong>Bad Alan:</strong> Aggressive mob with red eyes.</li>
-                    <li class="list-group-item"><strong>The Guard:</strong> Protects you from evil mobs.</li>
+                    <li class="list-group-item"><strong>Alan Walker:</strong> <span class="badge bg-success ms-2">Peaceful</span><br><small class="text-muted">Can be tamed with a diamond.</small></li>
+                    <li class="list-group-item"><strong>Bad Alan:</strong> <span class="badge bg-danger ms-2">Aggressive</span><br><small class="text-muted">Mob with red eyes.</small></li>
+                    <li class="list-group-item"><strong>The Guard:</strong> <span class="badge bg-primary ms-2">Protective</span><br><small class="text-muted">Protects you from evil mobs.</small></li>
                 </ul>
             </section>
 
             <section id="installation" class="mb-5">
                 <h2 class="mb-3 text1">3. Installation</h2>
-                <ol class="list-group list-group-numbered mb-3">
+                <h5 class="mb-3">Method 1: Manual Installation</h5>
+                <ol class="list-group list-group-numbered mb-4">
                     <li class="list-group-item">Ensure Minecraft & NeoForge 1.21.8 are installed (<a href="https://neoforged.net/">link</a>).</li>
                     <li class="list-group-item">Download the Alan Walker Music Mod .jar file.</li>
                     <li class="list-group-item">Place it in your Minecraft "mods" folder.</li>
                     <li class="list-group-item">Launch Minecraft with NeoForge to load the mod.</li>
                 </ol>
-                <h4 class="mt-3">Via Modrinth</h4>
-                <p>You can also install it using the Modrinth Launcher. Search for "Alan Walker Music" and follow prompts.</p>
+                <h5 class="mb-3">Method 2: Via Modrinth Launcher</h5>
+                <p>You can also install it using the Modrinth Launcher. Simply search for <strong>"Alan Walker Music"</strong> and follow the prompts.</p>
             </section>
 
             <section id="commands" class="mb-5">
                 <h2 class="mb-3 text1">4. Commands</h2>
+                <p class="mb-3"><em>Use the following commands in-game:</em></p>
                 <ul class="list-group">
-                    <li class="list-group-item"><strong>/summon alan_walker_music:alan_walker</strong> - Summons Alan Walker mob.</li>
-                    <li class="list-group-item"><strong>/summon alan_walker_music:bad_alan</strong> - Summons Bad Alan mob.</li>
-                    <li class="list-group-item"><strong>/summon alan_walker_music:the_guard</strong> - Summons The Guard mob.</li>
-                    <li class="list-group-item"><strong>/info</strong> - Display website info.</li>
+                    <li class="list-group-item"><code>/summon alan_walker_music:alan_walker</code><br><small class="text-muted">Summons Alan Walker mob.</small></li>
+                    <li class="list-group-item"><code>/summon alan_walker_music:bad_alan</code><br><small class="text-muted">Summons Bad Alan mob.</small></li>
+                    <li class="list-group-item"><code>/summon alan_walker_music:the_guard</code><br><small class="text-muted">Summons The Guard mob.</small></li>
+                    <li class="list-group-item"><code>/info</code><br><small class="text-muted">Display website info.</small></li>
                 </ul>
             </section>
+            <section id="mapdownload" class="mb-5">
+                <h2 class="mb-3 text1">5. Map Download</h2>
+                <p>Download the Custom Map:</p>
+                <p class="alert alert-dark text-center mb-4" role="alert"><a href="https://drive.google.com/file/d/1pZw1eQw4bJIJWwFOUUroqST0qomZohMl/view?usp=sharing" target="_blank" class="btn btn-primary">Download Map</a></p>
+                
+                <h5 class="mb-3">Installation Overview</h5>
+                <ol class="list-group list-group-numbered mb-4">
+                    <li class="list-group-item">Extract the downloaded ZIP file.</li>
+                    <li class="list-group-item">Place the extracted folder in your Minecraft "saves" directory.</li>
+                    <li class="list-group-item">Launch Minecraft and select the map from the "Singleplayer" menu.</li>
+                </ol>
+                
+                <div class="accordion" id="mapInstallAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#modrinthInstall">Modrinth Launcher</button>
+                        </h2>
+                        <div id="modrinthInstall" class="accordion-collapse collapse" data-bs-parent="#mapInstallAccordion">
+                            <div class="accordion-body">
+                                <figure class="figure mb-3">
+                                    <img src="/img/mapinstallmodrinth/1.png" class="figure-img img-fluid rounded" alt="Modrinth Launcher Step 1">
+                                    <figcaption class="figure-caption">In the Modrinth launcher, go to the profile with our mod and click on the 3 dots in the upper right corner.</figcaption>
+                                </figure>
+                                <figure class="figure mb-3">
+                                    <img src="/img/mapinstallmodrinth/2.png" class="figure-img img-fluid rounded" alt="Modrinth Launcher Step 2">
+                                    <figcaption class="figure-caption">Click on "Open Folder".</figcaption>
+                                </figure>
+                                <figure class="figure mb-3">
+                                    <img src="/img/mapinstallmodrinth/3.png" class="figure-img img-fluid rounded" alt="Modrinth Launcher Step 3">
+                                    <figcaption class="figure-caption">This will open the Minecraft folder. Open the "saves" folder.</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                    <img src="/img/mapinstallmodrinth/4.png" class="figure-img img-fluid rounded" alt="Modrinth Launcher Step 4">
+                                    <figcaption class="figure-caption">Unzip the downloaded ZIP file and drag the folder into your "save" folder.</figcaption>
+                                </figure>
+                                <div class="alert alert-info mt-3" role="alert">This guide applies only to the Modrinth launcher. Steps may differ for Mojang or other third-party launchers.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mojangInstall">Mojang Launcher</button>
+                        </h2>
+                        <div id="mojangInstall" class="accordion-collapse collapse" data-bs-parent="#mapInstallAccordion">
+                            <div class="accordion-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item">Open the Minecraft folder by typing <code>%appdata%</code> in Windows search and press Enter, then navigate to ".minecraft" folder.</li>
+                                    <li class="list-group-item">Open the "saves" folder.</li>
+                                    <li class="list-group-item">Unzip the downloaded ZIP file and drag the folder into your "save" folder.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#curseforgeInstall">Curseforge Launcher</button>
+                        </h2>
+                        <div id="curseforgeInstall" class="accordion-collapse collapse" data-bs-parent="#mapInstallAccordion">
+                            <div class="accordion-body">
+                                <h6 class="mb-3">Preparation</h6>
+                                <ul class="mb-3">
+                                    <li>Download the desired Minecraft map file (.zip)</li>
+                                    <li>Extract the .zip file</li>
+                                    <li><strong>Important:</strong> Ensure the extracted folder contains the <code>level.dat</code> file directly (not in a subfolder)</li>
+                                </ul>
+                                
+                                <h6 class="mb-3">Step 1: Open CurseForge Folder</h6>
+                                <ol class="list-group list-group-numbered mb-3">
+                                    <li class="list-group-item">Open the <strong>CurseForge Launcher</strong></li>
+                                    <li class="list-group-item">Right-click on the modpack profile in <strong>"My Modpacks"</strong> where you want to play the map</li>
+                                    <li class="list-group-item">Select <strong>"Open Folder"</strong> to access the modpack directory</li>
+                                </ol>
 
+                                <h6 class="mb-3">Step 2: Add the Map</h6>
+                                <ol class="list-group list-group-numbered mb-3">
+                                    <li class="list-group-item">Navigate to the <strong>"saves"</strong> folder in the opened directory</li>
+                                    <li class="list-group-item">If no "saves" folder exists, create one with that name</li>
+                                    <li class="list-group-item">Move the extracted map folder into the "saves" folder</li>
+                                </ol>
+
+                                <h6 class="mb-3">Step 3: Launch Game</h6>
+                                <ol class="list-group list-group-numbered mb-3">
+                                    <li class="list-group-item">Start the modpack through CurseForge</li>
+                                    <li class="list-group-item">The new world should now be available in the Singleplayer menu</li>
+                                </ol>
+
+                                <div class="alert alert-warning" role="alert">
+                                    <strong>Important Note:</strong> Ensure the map is compatible with the Minecraft version used by your modpack.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="video" class="mb-5">
-                <h2 class="mb-3 text1">5. Mod-Preview</h2>
+                <h2 class="mb-3 text1">6. Mod-Preview</h2>
                 <div class="ratio ratio-16x9 mb-3">
                     <iframe src="https://www.youtube.com/embed/_skTmqb3lxA" title="YouTube video player" allowfullscreen></iframe>
                 </div>
@@ -165,16 +263,18 @@
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.addEventListener('DOMContentLoaded', function() {
-        const dropdown = document.querySelector('.dropdown');
-        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
-        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-        dropdown.addEventListener('mouseenter', function() {
-            dropdownMenu.classList.add('show');
-            dropdownToggle.setAttribute('aria-expanded', 'true');
-        });
-        dropdown.addEventListener('mouseleave', function() {
-            dropdownMenu.classList.remove('show');
-            dropdownToggle.setAttribute('aria-expanded', 'false');
+        const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+        dropdowns.forEach(function(dropdown) {
+            const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            dropdown.addEventListener('mouseenter', function() {
+                dropdownMenu.classList.add('show');
+                dropdownToggle.setAttribute('aria-expanded', 'true');
+            });
+            dropdown.addEventListener('mouseleave', function() {
+                dropdownMenu.classList.remove('show');
+                dropdownToggle.setAttribute('aria-expanded', 'false');
+            });
         });
     });
 </script>
