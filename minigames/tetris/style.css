@@ -1,0 +1,169 @@
+/* Tetris Spiel CSS */
+body {
+    background-color: #7cbeff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Spielbereich */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 630px;
+}
+
+#tetris {
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Scoreboard */
+.score-display {
+    text-align: center;
+}
+
+.score-item h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.next-block-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    padding: 10px;
+    height: 140px;
+}
+
+#nextBlock {
+    background-color: #0f3460;
+    border: 2px solid #16213e;
+    border-radius: 4px;
+}
+
+/* Steuerungsbuttons */
+.control-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.controls .btn-lg {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+/* Farben für Tetris-Blöcke */
+.tetromino-i { background-color: #00f5ff; }
+.tetromino-j { background-color: #0000ff; }
+.tetromino-l { background-color: #ff7f00; }
+.tetromino-o { background-color: #ffff00; }
+.tetromino-s { background-color: #00ff00; }
+.tetromino-t { background-color: #800080; }
+.tetromino-z { background-color: #ff0000; }
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .game-container {
+        min-height: 500px;
+    }
+    
+    #tetris {
+        width: 250px;
+        height: 500px;
+    }
+    
+    .controls .btn-lg {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Card Hover-Effekte */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Liste für Tastenbelegung */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+/* Button-Styles für Start/Pause */
+#pauseBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Start-Button hervorheben */
+#startBtn {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+#startBtn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #218838 0%, #1ba87e 100%);
+    border-color: #1e7e34;
+}
+
+/* Pause-Button */
+#pauseBtn {
+    background: linear-gradient(135deg, #dc3545 0%, #e4606d 100%);
+    border-color: #dc3545;
+    color: white;
+    font-weight: bold;
+}
+
+#pauseBtn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #c82333 0%, #d04857 100%);
+    border-color: #bd2130;
+}
+
+/* Start-Bildschirm Canvas */
+.game-start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.game-start-screen h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-start-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
